@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Donut API 
 
-## Getting Started
+This project is a simple RESTful API for managing donuts using Next.js. It allows users to perform CRUD (Create, Read, Update, Delete) operations on donut data stored in a JSON file
 
-First, run the development server:
+
+# Table of Contents
+- [Donut API](#donut-api)
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+    - [Clone the Repository](#clone-the-repository)
+    - [Install Dependencies](#install-dependencies)
+    - [Run the Application](#run-the-application)
+- [API Endpoints](#api-endpoints)
+- [Using Postman](#using-postman)
+- [RESTful API Overview](#restful-api-overview)
+- [Contributing](#contributing)
+- [License](#license)
+
+# Features
+- **GET**: Retrieve donut information by ID
+- **POST**: Add new donuts to the database
+- **PUT**: Update existing donut details
+- **DELETE**: Remove a donut from the database
+# Technologies Used
+- Next.js
+- Node.js
+- Postman
+- JSON
+
+# Getting Started
+
+### Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seal-000/donut-api.git
+cd donut-api
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Run the Application
+```bash
+npm run dev
+```
+The API will be available at http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+# API Endpoints
+| Method | Endpoint            | Description                        |
+|--------|---------------------|------------------------------------|
+| GET    | /api/donuts/:donutId     | Retrieve donut by ID               |
+| POST   | /api/donuts         | Add a new donut                    |
+| PUT    | /api/donuts/:donutId     | Update an existing donut by ID     |
+| DELETE | /api/donuts/:donutId     | Delete a donut by ID               |
 
-To learn more about Next.js, take a look at the following resources:
+# Using Postman
+1. Open Postman and create a new request
+2. Choose the appropriate HTTP method (GET, POST, PUT, DELETE)
+3. Enter the URL for your local server (e.g., http://localhost:3000/api/donuts)
+4. For POST and PUT requests, set the body type to JSON and provide the necessary data
+5. Click Send to make the request and view the response
+# RESTful API Overview
+A RESTful API (Representational State Transfer) is an architectural style for designing networked applications. It relies on stateless communication and standard HTTP methods to perform CRUD operations:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **GET**: Retrieve data from the server
+- **POST**: Send data to the server to create a new resource
+- **PUT**: Update an existing resource on the server
+- **DELETE**: Remove a resource from the server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Contributing
+Feel free to contribute to this project by submitting issues or pull requests. Your contributions are welcome!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# License
+Distributed under the MIT License. See `LICENSE` for more information
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
