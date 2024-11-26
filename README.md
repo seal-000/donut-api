@@ -25,9 +25,9 @@ This project is a simple RESTful API for managing donuts using Next.js. It allow
 - **DELETE**: Remove a donut from the database
 # Technologies Used
 - Next.js
-- Node.js
 - Postman
 - JSON
+- TypeScript
 
 # Getting Started
 
